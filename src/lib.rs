@@ -102,7 +102,7 @@ fn enroll () {
     let signer = read_keypair_file("Turbin3-wallet.json").expect("Couldn't find wallet file");
     let prereq = TurbinePrereqProgram::derive_program_address(&[b"prereq", signer.pubkey().to_bytes().as_ref()]);
     // Define our instruction data 
-    let args = CompleteArgs {github: b"AymanF10".to_vec() };
+    let args = CompleteArgs {github: b"whitecometx".to_vec() };
     // Get recent blockhash
     let blockhash = rpc_client .get_latest_blockhash() .expect("Failed to get recent blockhash");
     // Now we can invoke the "complete" function 
